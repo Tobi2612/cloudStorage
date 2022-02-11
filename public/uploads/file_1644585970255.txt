@@ -1,0 +1,37 @@
+The Keyboard has the highest level of interrupt
+
+Software interrupt - 
+Hardware interrupt -TRAP
+
+There are 8 software interrupts
+There are 5 hardware interrupts
+
+Mask interrupt: Masking means hiding something. If masked, it won't be responded to. 
+		If unmasked, it is responded to.
+
+RST 0 has an interrupt of 0
+RST 1 has an interrupt of 8
+RST 2 has an interrupt of 16
+TRAP has an interrupt of 24
+
+#interrupt in Hex
+
+#multiply by 8
+
+0 - 40(Hex) is where the memory is mapped, don't use these locations
+
+ORG (origin) is used to specify the location in the memory for a program to start 
+DB - Define bytes
+ISR - Interrupt service routine
+
+
+Data Transfer operations doesn't affect the flags.
+
+A subroutine is a set of instructions designed to perform a frequently used operation within a program
+
+Unconditional jump: don't come back to initial position
+Conditional jump:  come back to initial position (must use a stack pointer)
+
+Avoid using the accumulator for storing value for later because it will be used frequently to store temporary value.
+
+*Memory mapping
