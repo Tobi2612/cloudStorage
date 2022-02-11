@@ -44,9 +44,9 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')))
 
 //mount routers
-app.use('/api/v1/auth', auth);
-app.use('/api/v1/file', file);
-app.use('/api/v1/admin', admin);
+app.use('api/v1/auth', auth);
+app.use('api/v1/file', file);
+app.use('api/v1/admin', admin);
 
 
 
