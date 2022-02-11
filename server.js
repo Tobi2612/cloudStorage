@@ -53,7 +53,7 @@ app.use('api/v1/admin', admin);
 // route to api documentation
 app.get("/", (req, res) => {
 
-    res.status(301).redirect("https://documenter.getpostman.com/view/12085227/UVXbtyqT")
+    res.status(301).redirect("https://documenter.getpostman.com/view/12085227/UVeMJPW8")
 
 })
 
