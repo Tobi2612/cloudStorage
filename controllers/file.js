@@ -73,7 +73,7 @@ exports.uploadFile = asyncHandler(async (req, res, next) => {
 
 
 // @desc     Download file
-// @route    GET / api / v1 / file / download
+// @route    GET /api/v1/file/ download
 // @access   Private
 exports.downloadFile = asyncHandler(async (req, res, next) => {
     const { file_name } = req.body
@@ -100,8 +100,6 @@ exports.downloadFile = asyncHandler(async (req, res, next) => {
 
         res.download(pathh, function (err) {
             if (err) {
-                // Handle error, but keep in mind the response may be partially-sent
-                // so check res.headersSent
                 console.log(res.headersSent)
             } else {
                 // decrement a download credit, etc. // here remove temp file

@@ -10,9 +10,9 @@ const s3 = new AWS.S3({
 
 
 
-//@desc     Register User
-//@route    POST /api/v1/auth/register
-//@access   Public
+//@desc     Flag File
+//@route    PUT /api/v1/admin/flag
+//@access   Private Admin
 exports.flagFile = asyncHandler(async (req, res, next) => {
 
     const { file_name } = req.body
@@ -30,9 +30,9 @@ exports.flagFile = asyncHandler(async (req, res, next) => {
 
 });
 
-//@desc     Register User
-//@route    POST /api/v1/auth/register
-//@access   Public
+//@desc     Review Flagged FIle
+//@route    POST /api/v1/admin/review
+//@access   Private Admin
 exports.reviewFile = asyncHandler(async (req, res, next) => {
 
     const { file_name, delete_file } = req.body
